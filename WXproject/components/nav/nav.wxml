@@ -1,0 +1,5 @@
+<view class="container">
+  <image bindtap="onRight" class="icon" src="{{latest ? disLeftSrc : leftSrc}}"></image>
+  <text class="titile">{{title}}</text>
+  <image bindtap="onLeft" class="icon" src="{{first ? disRightSrc : rightSrc}}"></image>
+</view>

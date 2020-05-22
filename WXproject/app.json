@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/calssic/classic",
+    "pages/book/book",
+    "pages/my/my",
+    "pages/book-detail/book-detail"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "林间有风",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default",
+    "backgroundColor": "#ffffff",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#c7c7c7",
+    "selectedColor": "#000",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/calssic/classic",
+        "text": "流行",
+        "iconPath": "images/tab/classic.png",
+        "selectedIconPath": "images/tab/classic@highlight.png"
+      },
+      {
+        "pagePath": "pages/book/book",
+        "text": "书籍",
+        "iconPath": "images/tab/book.png",
+        "selectedIconPath": "images/tab/book@highlight.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "喜欢",
+        "iconPath": "images/tab/my.png",
+        "selectedIconPath": "images/tab/my@highlight.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

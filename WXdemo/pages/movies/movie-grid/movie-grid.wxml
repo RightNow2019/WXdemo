@@ -1,0 +1,8 @@
+<import src="../movie/movie.wxml" />
+<template name="movieGirdTemplate">
+  <view class="grid-container">
+    <view class="single-view-container" wx:for="{{movies}}" wx:key="index">
+      <template is="movieTemplate" data="{{...item}}"></template>
+    </view>
+  </view>
+</template>

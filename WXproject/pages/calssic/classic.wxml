@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="header">
+    <v-epsoide class="epsoide" index="{{calssicData.index}}"></v-epsoide>
+    <view class="like-container">
+      <v-like class="like" bind:like="onLike" like="{{like_status}}" count="{{likeCount}}"></v-like>
+      <v-button class="share-btn" open-type="share">
+        <image class="share" slot="img" src="/images/icon/share.png"></image>
+      </v-button>
+    </view>
+  </view>
+  <v-movie hidden="{{calssicData.type !== 100}}" img="{{calssicData.image}}" content="{{calssicData.content}}"></v-movie>
+  <v-music wx:if="{{calssicData.type === 200}}" titleM="{{calssicData.title}}" src="{{calssicData.url}}" img="{{calssicData.image}}" content="{{calssicData.content}}"></v-music>
+  <v-essay hidden="{{calssicData.type !== 300}}" img="{{calssicData.image}}" content="{{calssicData.content}}"></v-essay>
+  <v-nav bindleft="onPrev" bindright="onNext" class="nav" title="{{calssicData.title}}" first="{{first}}" latest="{{latest}}"></v-nav>
+</view>
